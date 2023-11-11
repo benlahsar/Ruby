@@ -1,0 +1,52 @@
+:root{
+    --white: white;
+    --bordeau: #9e121b;
+    --my-grey: #f3f3f3;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Suisse ;
+}
+@font-face {
+    font-family: Rubik;
+    src: url(../fonts/Rubik-Font.ttf);
+    font-family: Suisse;
+    src: url(../fonts/SuisseIntl-Regular.ttf);
+}
+
+body{
+    background-color: var(--white);
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--my-grey);
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+nav a{
+    margin-right: 50px;
+}
+nav a img{
+    height: 80px;
+}
+nav a{
+    color: var(--bordeau);
+}
+a{
+    text-decoration: none;
+}
+button{
+    padding: 10px 30px;
+    margin: 8px 10px;
+    background-color: var(--bordeau);
+    color: var(--white);
+    border: none;
+}
