@@ -1,14 +1,16 @@
-:root{
+:root {
     --white: white;
     --bordeau: #9e121b;
     --my-grey: #f3f3f3;
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Suisse ;
+    font-family: Rubik;
 }
+
 @font-face {
     font-family: Rubik;
     src: url(../fonts/Rubik-Font.ttf);
@@ -16,37 +18,496 @@
     src: url(../fonts/SuisseIntl-Regular.ttf);
 }
 
-body{
+body {
     background-color: var(--white);
 }
-nav{
+
+hr {
+    border: 1px solid black;
+}
+
+header {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px 15px;
+    /* width: 100%; */
+    color: black;
+}
+
+nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: var(--my-grey);
+    background-color: var(--bordeau);
+    margin-bottom: 10px;
 }
-nav ul{
+
+nav ul {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
     margin-top: 15px;
 }
-nav a{
+
+nav a {
     margin-right: 50px;
 }
-nav a img{
-    height: 80px;
+
+nav a img {
+    height: 100px;
 }
-nav a{
-    color: var(--bordeau);
+
+nav a {
+    color: var(--white);
 }
-a{
+
+a {
     text-decoration: none;
 }
-button{
+
+.btn {
     padding: 10px 30px;
-    margin: 8px 10px;
     background-color: var(--bordeau);
     color: var(--white);
     border: none;
+}
+
+.btn-margin {
+    margin: 8px 10px;
+}
+
+.red:hover {
+    color: var(--bordeau);
+}
+
+.carousel-container {
+    position: relative;
+    /* margin: auto; */
+}
+
+.description header {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px 15px;
+    position: absolute;
+    bottom: 150px;
+    left: 16px;
+    width: 100%;
+    color: var(--white);
+}
+
+.description p {
+    font-size: 20px;
+    padding: 10px 15px;
+    position: absolute;
+    bottom: 80px;
+    left: 16px;
+    width: 100%;
+    color: var(--white);
+}
+
+.description button {
+    position: absolute;
+    bottom: 20px;
+    left: 16px;
+}
+
+#title {
+    margin: 8px;
+}
+
+.explore-products {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.product-card {
+    border: 1px solid var(--bordeau);
+    padding: 150px;
+    margin: 40px;
+    background-image: url();
+}
+
+.product-card:hover {
+    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); */
+    border: 3px solid var(--bordeau);
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.shop-by-category {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 35px 20px;
+    margin: 10px 20px;
+}
+
+.first {
+    background-image: url();
+    background-color: lightgray;
+    /* max-width: 50%; */
+    /* max-height: 10%; */
+    padding: 40px;
+}
+
+.second {
+    background-color: lightblue;
+    /* max-width: 50%; */
+    padding: 50px 20px;
+}
+
+.third {
+    background-color: lightcoral;
+    /* max-width: 50%; */
+    padding: 40px;
+}
+
+.fourth {
+    background-color: lightseagreen;
+    /* max-width: 50%; */
+    padding: 40px;
+}
+
+.fifth {
+    background-color: lightsalmon;
+    padding: 40px;
+    /* max-width: 50%; */
+}
+
+.sixth {
+    background-color: lightgreen;
+    padding: 40px;
+}
+
+.reason {
+    background-color: var(--my-grey);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    padding: 20px;
+
+}
+
+.reason header {
+    color: black;
+    text-align: center;
+    font-size: 29px;
+}
+
+.why {
+    display: flex;
+    justify-content: space-around;
+}
+
+.reasons {
+    width: 25%;
+    float: left;
+    margin-right: 50px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.setups {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px 50px;
+}
+
+.setup-1 {
+    background-color: lightsteelblue;
+    padding: 40px;
+    background-image: url();
+}
+
+.setup-2 {
+    background-color: lightseagreen;
+    padding: 40px;
+    background-image: url();
+}
+
+.setup-3 {
+    background-color: lightcoral;
+    padding: 40px;
+    background-image: url();
+}
+
+.setup-4 {
+    background-color: lightgrey;
+    padding: 40px;
+    background-image: url();
+}
+
+.view-more {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.red-bg {
+    width: 100%;
+    border: 1px solid var(--bordeau);
+    background-color: var(--white);
+}
+
+.my-setups {
+    margin: 20px 20px;
+}
+
+footer {
+    background-color: var(--my-grey);
+}
+
+#last-balis {
+    position: relative;
+    top: 30px;
+}
+
+#last-balis .section-one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#last-balis .section-one a {
+    margin: 0px 8px;
+    background-color: var(--white);
+    width: 40%;
+    height: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid var(--bordeau);
+    transition-duration: 0.5s;
+}
+
+#last-balis .section-one a:hover {
+    background-color: #da1925;
+    color: #000;
+}
+
+#last-balis .section-one h2,
+p,
+i {
+    color: #000;
+}
+
+#last-balis .section-one a h2 {
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: -1px;
+    color: var(--bordeau);
+}
+
+#last-balis .section-one a p {
+    font-weight: lighter;
+    font-size: 14px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+#last-balis .section-one a p i {
+    font-size: 13px;
+    color: #f8c3f6;
+}
+
+#last-balis .section-one a i {
+    margin: 0px 6px;
+    font-size: 25px;
+    color: #f8c3f6;
+}
+
+/*section One*/
+
+/*section Two*/
+.section-two {
+    height: 250px;
+    max-width: 90%;
+    background-color: var(--white);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 30px;
+    padding: 40px;
+    border-radius: 8px;
+    border: 1px solid var(--bordeau);
+}
+
+.section-two section {
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+}
+
+#last-balis .section-two section h1 {
+    letter-spacing: -2px;
+    font-size: 28px;
+    font-weight: 700;
+    word-spacing: -1;
+    color: black;
+}
+
+#last-balis .section-two section p {
+    word-spacing: -1;
+    color: black;
+}
+
+#last-balis .section-two section a {
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: var(--bordeau);
+    margin: 0px 12px;
+    position: relative;
+    top: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--white);
+    letter-spacing: -1px;
+}
+
+#last-balis .section-two section a:hover {
+    background-color: var(--white);
+    border: 1px solid var(--bordeau);
+    color: #000;
+}
+
+/*section Two*/
+
+/*section three*/
+.section-three {
+    height: 180px;
+    padding: 30px;
+    margin: 60px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.section-three article {
+    width: 90%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.section-three article div a {
+    text-decoration: none;
+    margin: 0px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+
+.ligne {
+    width: 90%;
+    margin: auto;
+    position: absolute;
+    bottom: 0px;
+}
+
+.ligne hr {
+    font-weight: lighter;
+    color: grey;
+}
+
+/*section three*/
+
+/* START section-brevious*/
+.section-brevious {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    text-align: center;
+    position: relative;
+    bottom: 60px;
+}
+
+.section-brevious article div {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-brevious article div p {
+    color: rgb(144, 141, 141);
+    word-spacing: -3px;
+    font-size: 14px;
+}
+
+.section-brevious article div i {
+    font-size: 45px;
+}
+
+/* END section-brevious*/
+
+/* start last section*/
+.last-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    bottom: 60px;
+    height: 250px;
+}
+
+.last-section .para2 {
+    text-align: center;
+    position: relative;
+    top: 14px;
+    color: grey;
+    font-size: 14px;
+    font-weight: 540;
+}
+
+.last-section .para1 {
+    font-size: 15px;
+    font-weight: 600;
+    color: gray;
+    letter-spacing: -1px;
+}
+
+.last-section .sources {
+    position: relative;
+    top: 35px;
+}
+
+.last-section .sources a {
+    text-decoration: none;
+    margin: 0px 6px;
+    font-size: 14px;
+    color: rgb(155, 155, 155);
+    font-weight: 580;
 }

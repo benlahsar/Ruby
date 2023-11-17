@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/styles.css">
-        <link rel="stylesheet" href="home_style.css">
-        <title>Ruby Store</title>
-    </head>
-    <body>
-        <nav>
-            <a href="#"><img src="../Images/ruby_store.svg" alt="logo"></a>
-            <ul>
-                <li><a href="#">Nos PC</a></li>
-                <li><a href="#">Nos Accessoires</a></li>
-                <li><a href="#">Espace Client</a></li>
-                <li><a href="#">Blog</a></li>
-                <div class="icons">
-                    <li><i class=""></i></li>
-                    <li><i class=""></i></li>
-                </div>
-            </ul>
-        </nav>
-        <div class="caroussel">
-            <div class="first-img">
-                <header></header>
-                <p></p>
-                <button>SHOP NOW</button>
-                <img src="" alt="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="home_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ruby Store</title>
+</head>
+
+<body>
+    <nav>
+        <a href="#"><img src="../Images/logo-white.png" alt="logo"></a>
+        <ul>
+            <li><a href="#">Nos PC</a></li>
+            <li><a href="#">Nos Accessoires</a></li>
+            <li><a href="#">Espace Client</a></li>
+            <li><a href="#">Blog</a></li>
+            <div class="icons">
+                <a href="#"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
             </div>
-            <div class="second">
+        </ul>
+    </nav>
+    <div class="carousel-container">
+        <div class="first-img">
+            <img src="../Images/bg.png" style="width: 100%;">
+            <div class="description">
+                <header>XENEON 27QHD240 OLED</header>
+                <p>Experience next level gaming with the newest <br>27-inch 240Hz OLED monitor</p>
+                <button class="btn btn-margin">SHOP NOW</button>
+            </div>
+        </div>
+        <!-- <div class="second">
                 <header></header>
                 <p></p>
                 <button>SHOP NOW</button>
@@ -45,91 +52,184 @@
                 <p></p>
                 <button>SHOP NOW</button>
                 <img src="" alt="">
+            </div> -->
+        <!-- <a href="" class="next" onclick="plus">&#10094;</a>
+            <a href="" class="prev">&#10095;</a> -->
+    </div>
+    <main>
+        <header id="title">DECOUVRIR PRODUITS</header>
+        <section class="explore-products">
+            <div class="product-card">
+                <img src="" alt="photo" style="width: 100%;">
+                <div class="container">
+                    <p>GAMING PC</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="" alt="photo" style="width: 100%;">
+                <div class="container">
+                    <p>GAMING PC</p>
+                </div>
+            </div>
+        </section>
+        <section class="shop-by-category">
+            <div class="first">
+                <header>Decouvrir notre souris</header>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius eligendi debitis laboriosam neque
+                    quidem in vel? Est vel perspiciatis eius, totam suscipit cumque delectus quia cum quas ab, aliquid
+                    nulla.</p>
+
+            </div>
+            <div class="second">
+                <header>PC</header>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quas porro ipsum accusantium iure
+                    ratione quisquam amet! At, est explicabo eius neque natus maiores saepe qui culpa excepturi odio
+                    illum?</p>
+
+            </div>
+            <div class="third">
+                <header>Laptop</header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quos aut explicabo sint impedit
+                    repellat eos ipsam, voluptatem quas provident quidem repellendus temporibus odit dolorem enim.
+                    Consequuntur cupiditate omnis autem!</p>
+
+            </div>
+            <div class="fourth">
+                <header>Casques</header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quae molestias modi, voluptate nesciunt
+                    ea accusamus id, nostrum voluptatibus laudantium, placeat ab reprehenderit aperiam quo. Aspernatur
+                    tenetur eius ad quidem.</p>
+
+            </div>
+            <div class="fifth">
+                <header>RAM</header>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis fuga voluptates, debitis itaque
+                    dolore aliquid omnis consectetur? Rerum sequi quas, expedita nihil nam possimus quasi aut debitis
+                    mollitia id doloremque.</p>
+
+            </div>
+            <div class="sixth">
+                <header>RAM</header>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis fuga voluptates, debitis itaque
+                    dolore aliquid omnis consectetur? Rerum sequi quas, expedita nihil nam possimus quasi aut debitis
+                    mollitia id doloremque.
+                </p>
+
+            </div>
+        </section>
+        <section class="reason">
+            <header>WHY <span class="red">RUBY</span> STORE?</header>
+            <div class="why">
+                <div class="reasons">
+                    <img src="" alt="">
+                    <p class="title">ALWAYS BE AIMING.</p>
+                    <p class="text">Rear paddles let you jump, reload, and crouch without your thumbs leaving the
+                        sticks.</p>
+                </div>
+                <div class="reasons">
+                    <img src="" alt="">
+                    <p class="title">SHOOT FASTER.</p>
+                    <p class="text">Set the adjustable triggers to instant for a mouse-click response.</p>
+                </div>
+                <div class="reasons">
+                    <img src="" alt="">
+                    <p class="title">GET A GRIP.</p>
+                    <p class="text">Both our swappable thumbsticks and grip keep you connected and comfortable for
+                        hours.</p>
+                </div>
+                <div class="reasons">
+                    <img src="" alt="">
+                    <p class="title">BEGIN YOUR WAY.</p>
+                    <p class="text">1B+ possible configurations for every style.</p>
+                </div>
+            </div>
+        </section>
+        <section class="my-setups">
+            <header><span class="red">RUBY</span> SETUPS</header>
+            <div class="setups">
+                <div class="setup-1">setup-1</div>
+                <div class="setup-2">setup-2</div>
+                <div class="setup-3">setup-3</div>
+                <div class="setup-4">setup-4</div>
+            </div>
+            <div class="view-more"><button class="btn" type="button" style="margin: 15px 0;">View more</button></div>
+        </section>
+    </main>
+</body>
+<footer>
+    <section id="last-balis">
+        <div class="section-one">
+            <a href="#">
+                <h2>Ruby Store Newsletters</h2>
+                <p>Our Best Stories in Your Inbox <i class="fa-solid fa-arrow-right" style="color: #fcfcfc;"></i>
+                </p>
+            </a>
+
+            <a href="#">
+                <h2>Follow Ruby Store</h2>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook" style="color: #005eff;"></i>
+                    <i class="fa-brands fa-x-twitter" style="color: black;"></i>
+                    <i class="fa-brands fa-apple" style="color: black;"></i>
+                    <i class="fa-brands fa-instagram" style="color: pink;"></i>
+                </div>
+            </a>
+        </div>
+        <div class="section-two">
+            <section>
+                <h1>HONEST, OBJECTIVE, LAB-TESTED REVIEWS</h1>
+                <p><b>PCMag.com is a leading authority on technology, delivering lab-based, independent reviews of
+                        the latest products and services.
+                        Our expert industry analysis and practical solutions help you make better buying decisions
+                        and get more from technology.</b></p>
+                <div>
+                    <a href="#">How We Test</a>
+                    <a href="#">Editorial Prinsipales</a>
+                </div>
+            </section>
+        </div>
+
+        <div class="section-three">
+            <article>
+                <div>
+                    <a href="#">Reviews</a>
+                    <a href="#">Best Products</a>
+                    <a href="#">Categories</a>
+                    <a href="#">Brands</a>
+                    <a href="#">Events</a>
+                    <a href="#">Series</a>
+                    <a href="#">Encyclopedia</a>
+                    <a href="#">Sitemap</a>
+                </div>
+                <div> <a href="#">About PCMag</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact Us
+                        <a href="#">Press Center</a>
+                </div>
+            </article>
+            <div class="ligne">
+                <hr>
             </div>
         </div>
-        <main>
-            <div class="explore-products">
-                <header>EXPLORE PRODUCTS</header>
-                <section class="product-card">
-                    <img src="" alt="">
-                    <p></p>
-                </div>
-                <div class="product-card">
-                    <img src="" alt="">
-                    <p></p>
-                </div>
-                <div class="product-card">
-                    <img src="" alt="">
-                    <p></p>
-                </div>
-            </section>
-            <section class="other-products">
-                <div class="first">
-                    <header></header>
-                    <p></p>
-                    <a href="">SHOP NOW</a>
-                    <img src="" alt="">
-                </div>
-                <div class="second">
-                    <header></header>
-                    <p></p>
-                    <a href="">SHOP NOW</a>
-                    <img src="" alt="">
-                </div>
-                <div class="third">
-                    <header></header>
-                    <p></p>
-                    <a href="">SHOP NOW</a>
-                    <img src="" alt="">
-                </div>
-                <div class="fourth">
-                    <header></header>
-                    <p></p>
-                    <a href="">SHOP NOW</a>
-                    <img src="" alt="">
-                </div>
-                <div class="fifth">
-                    <header></header>
-                    <p></p>
-                    <a href="">SHOP NOW</a>
-                    <img src="" alt="">
-                </div>
-            </section>
-            <section class="reason">
-                <ul>
-                    <li><a href="#"><header>WHY BUY DIRECT FROM RUBY STORE?</header></a></li>
-                    <li>
-                        <a href="#"><img src="" alt="">
-                        <p>LARGEST SELECTION OF EXCLUSIVE PRODUCTS AND BUNDLES</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="" alt="">
-                            <p>SHIPS FREE NEXT BUSINESS DAY</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="" alt="">
-                        <p>LIVE CHAT WITH PRODUCTS SPECIALISTS</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="" alt="">
-                        <p>60 DAYS RISK FREE RETURNS</p>
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <section>
-                <div class="">
-                    <a href="">
-                        <header></header>
-                        <p></p>
-                        <img src="" alt="">
-                    </a>
-                </div>
-            </section>
-        </main>
-    </body>
-    <footer></footer>
+
+        <div class="last-section">
+            <p class="para1">&copy;1996-2023 ZIFF DAVIS, LLC., A ZIFF DAVIS COMPANY. ALL RIGHTS RESERVED.</p>
+            <p class="para2">PCMag, PCMag.com and PC Magazine are among the federally registered trademarks of Ziff
+                Davis and may not be used by third parties without explicit permission. The display of third- <br>
+                party trademarks and trade names on this site does not necessarily indicate any affiliation or the
+                endorsement of PCMag. If you click an affiliate link and buy a product or service, we <br>
+                may be paid a fee by that merchant.</p>
+            <div class="sources">
+                <a href="#">About Ziff Davis</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Advertise</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Do Not Sell My Personal Information</a>
+            </div>
+        </div>
+
+    </section>
+</footer>
+
 </html>
