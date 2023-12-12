@@ -1,0 +1,17 @@
+:root{}
+
+.adresse-content{
+    display: flex;
+    width: 80%;
+    margin-left: 10vw;
+    margin-top: 10vh;
+}
+
+input[type=submit]{
+    background-color: yellow;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px 0;
+}

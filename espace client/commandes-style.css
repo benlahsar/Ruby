@@ -1,0 +1,12 @@
+:root{}
+
+.commande-content{
+    display: flex;
+    width: 80%;
+    margin-left: 10vw;
+    margin-top: 10vh;
+}
+
+.history p{
+    margin-top: 15px;
+}
