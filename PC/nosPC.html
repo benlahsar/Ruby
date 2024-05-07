@@ -1,11 +1,527 @@
 <!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ruby Store</title>
-    </head>
-    <body>
-        
-    </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appareils</title>
+    <link rel="stylesheet" href="pc_style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <!-- <link rel="stylesheet" href="../css/style_backup.css">  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!--start header-->
+    <nav id="nav-bar">
+        <div class="nav-bar">
+            <a href="/index.html"><img class="home-img" src="../Images/logo.png" alt="logo" width="45px"
+                    loading="lazy"></a>
+            <div class="links">
+                <div class="drop-down">
+                    <a class="drop-btn" href="/PC/nosPC.html">Appareils</a>
+                </div>
+                <div class="drop-down">
+                    <a class="drop-btn" href="/Accessoires/nosAccessoires.html">Accessoires</a>
+                </div>
+                <div class="drop-down">
+                    <a class="drop-btn" href="/Blog/index.html">Communaute</a>
+                </div>
+
+
+                <!--  <div class="icons">
+                
+                    <div class="wrrpper" >
+                        <div class="searchBar">
+                        <input placeholder="Search..." id="searchBar" name="searchBar" type="text">
+                        <i class="fa-solid fa-magnifying-glass glass" id="btn"></i>
+                        <i class="fa-solid fa-xmark" id="cancel"></i>
+                        </div>
+                        
+                    </div>
+            </div> -->
+
+
+
+            </div>
+            <div class="icons">
+                <div class="wrapper show">
+                    <div class="searchBar">
+                        <input placeholder="Search..." id="searchBar" name="searchBar" type="text">
+                        <i class="fa-solid fa-magnifying-glass glass" id="btn"></i>
+                        <i class="fa-solid fa-xmark" id="cancel"></i>
+                    </div>
+                    <div class="results">
+                        <hr>
+                    </div>
+                </div>
+                <a href="#"><i class="fa-sharp fa-solid fa-cart-shopping cart-icon"></i></a>
+                <div class="popdown">
+                    <a class="pop-btn" href="#"><i class="fa-regular fa-circle-user"></i></a>
+                    <div class="popdown-cont">
+                        <a href="/espace_client/service.html">Profile</a>
+                        <a href="#">Sign in</a>
+                        <a href="/auth/login.html">Sign up</a>
+                        <a href="#">Log out</a>
+                    </div>
+                </div>
+                <!-- <i id="ico" class="fa-solid fa-bars " onclick=showSidebar() class="drop-down"></i> -->
+            </div>
+        </div>
+    </nav>
+    <!--End header-->
+
+
+    <main>
+        <!--start intro-->
+        <!-- <section id="intro">
+            <div class="img">
+                <div>
+                    <h2>VOYAGER LAPTOP</h2>
+                    <a href="#">ACHETER</a>
+                </div>
+            </div>
+        </section> -->
+        <!--End intro-->
+        <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+        <section id="parent">
+
+
+
+            <div class="adapt">
+                <label for="check" class="icon">REFINE</label>
+                <input type="checkbox" id="check">
+
+                <article class="first">
+                    <div class="item2">
+                        <div class="wrapper">
+                            <header class="filtre">
+                                <h2>Price Range</h2>
+                            </header>
+                            <div class="price-input">
+                                <div class="field">
+                                    <span>Min</span>
+                                    <input type="number" class="input-min" value="2500">
+                                </div>
+                                <div class="separator">-</div>
+                                <div class="field">
+                                    <span>Max</span>
+                                    <input type="number" class="input-max" value="7500">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="title">INFORMATIQUE</div>
+                            <div>
+                                <input type="checkbox" name="Pc Gamer" id="first1">
+                                <label for="first1">Pc Gamer</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="Pc Portable" id="first2">
+                                <label for="first2">Pc Portable</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="Mobile" id="first3">
+                                <label for="first3">Mobile</label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <hr>
+                            <div class="title">SYSTEME</div>
+                            <div>
+                                <input type="checkbox" name="WINDOWS" id="first1">
+                                <label for="first1">WINDOWS</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="ANDROID " id="first2">
+                                <label for="first2">ANDROID</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="OS" id="first3">
+                                <label for="first3">OS</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="IOS" id="first4">
+                                <label for="first4">IOS</label>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- les prodiutes  -->
+            <!-- hhhhhhh -->
+            <div class="gallery">
+                <!-- <div class="content">
+                    <img src="pc gamer/PC 2/2.png" alt="">
+                    <h3>Vibox VIII-209 SG PC</h3>
+                    <p>Intel i9 11900F - RTX 3070Ti 8Go - 32Go RAM - 1To NVMe SSD - 850W - Win11 - WiFi</p>
+                    <h6>22300DH</h6>
+                    <a href="/Product page/pc_page.html"><button class="buy">Acheter</button></a>
+
+                </div>
+                <div class="content">
+                    <img src="pc portable/HP 1/1.png" alt="">
+                    <h3>HP ProBook</h3>
+                    <p>450 G10, 15,6" FHD, Windows 11 Professionnel, i5,16 Go,512 Go SSD</p>
+                    <h6>15300DH</h6>
+                    <button class="buy">Acheter</button>
+
+                </div>
+                <div class="content">
+                    <img src="mobile/iPhone/7.png" alt="">
+                    <h3>iPhone 14 Pro Max</h3>
+                    <p>APPLE iPhone 14 Pro Max 128GB Space Black</p>
+                    <h6>11000DH</h6>
+                    <button class="buy">Acheter</button>
+
+                </div>
+                <div class="content">
+                    <img src="pc gamer/PC 1/2.png" alt="">
+                    <h3>Vibox VIII-1 PC Gamer</h3>
+                    <p>Intel i9 11900F - RTX 3060 12Go - 32Go RAM - 1To NVMe SSD - 600W - Win11 - WiFi</p>
+                    <h6>10100DH</h6>
+                    <button class="buy">Acheter</button>
+
+                </div>
+                <div class="content">
+                    <img src="pc portable/HP 2/2.png" alt="">
+                    <h3>HP Pavilion</h3>
+                    <p>Windows 11 FamilleIntel® Core™ i5 16Go RAM 512Go Disque SSD 15.6" FHDCarte graphique Intel® Iris® X</p>
+                    <h6>9999DH</h6>
+                    <button class="buy">Acheter</button>
+
+                </div>
+                <div class="content">
+                    <img src="mobile/HOTWAV/4.png" alt="">
+                    <h3>HOTWAV Cyber 9 Pro</h3>
+                    <p>8 Go + 128 Go Smartphone, Antichoc étanche 7500mAh Caméra triple 48MP - Bleu</p>
+                    <h6>1200DH</h6>
+                    <button class="buy">Acheter</button>
+
+                </div>
+                <div class="content">
+                    <img src="pc gamer/PC 3/2.png" alt="">
+                    <h3>PC Gamer Slayer</h3>
+                    <p>AMD Ryzen 5 4500 6x 3.60GHz - Nvidia GeForce RTX 3050 - 16Go DDR4 - 1To M.2 SSD - WiFi</p>
+                    <h6>6800DH</h6>
+                    <button class="buy">Acheter</button>
+
+                </div>
+                <div class="content">
+                    <img src="pc portable/MAC/2970632.jpg" alt="">
+                    <h3>MACBOOK APPLE</h3>
+                    <p>MACBOOK PRO MNEH3 M2 256 GO</p>
+                    <h6>20000DH</h6>
+                    <button class="buy">Acheter</button>
+
+                </div>
+                <div class="content">
+                    <img src="mobile/OPPO/4.png" alt="">
+                    <h3>OPPO A94</h3>
+                    <p>OPPO A94 128Go 5G Noir</p>
+                    <h6>3000DH</h6>
+                    <button class="buy">Acheter</button>
+
+                </div> -->
+            </div>
+
+
+
+            <!-- les prodiutes  -->
+        </section>
+
+
+        <div class="cartk" id="cartk">
+            <h2 class="cartk-title">Your cart</h2>
+            <div class="cartk-content">
+                <div class="cartk-box">
+                    <img src="pc gamer/PC 1/1.png" alt="" class="cartk-img">
+                    <div class="detail-box">
+                        <div class="cart-product-title">Earbuds</div>
+                        <div class="cart-price">25$</div>
+                        <input type="number" value="1" class="cart-quantity">
+
+                    </div>
+                    <i class="fa-solid fa-trash cart-remove"></i>
+                </div>
+
+
+
+            </div>
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">0$</div>
+            </div>
+            <button type="button" class="btn-buy">Buy Now</button>
+            <div><i class="fa-solid fa-xmark close-cart"></i></div>
+                      
+        </div>
+
+
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <h3>Contact Us</h3>
+                    <p>Email:rubystore@example.com</p>
+                    <p>Phone:+212524404169</p>
+                    <p>Address:H2XP+F7H, Av. Al Adarissa,Marrakech</p>
+                </div>
+                <div class="footer-content">
+                    <h3>Quick Links</h3>
+                    <ul class="list">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Informatique</a></li>
+                        <li><a href="">Accessoires</a></li>
+                        <li><a href="">Communaute</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <h3>Follow Us</h3>
+                    <ul class="social-icons">
+                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom-bar">
+                <p>&copy; 2023 your company . All rights reserved</p>
+            </div>
+        </footer>
+
+    </main>
+    <!--  ( ͡° ͜ʖ ͡°)  -->
+    <script>
+        document.getElementById('searchBar').focus()
+        const product = [
+            {
+                id: 9,
+                image: 'image/gg-1.jpg',
+                description: 'Intel i9 11900F - RTX 3070Ti 8Go - 32Go RAM - 1To NVMe SSD',
+                title: 'Z Flip Foldable Mobile',
+                price: 120,
+            }
+            , {
+                id: 0,
+                image: "pc_gamer/PC_2/1.png",
+                title: 'Vibox VIII-209 SG ',
+                description: 'Intel i9 11900F - RTX 3070Ti 8Go - 32Go RAM - 1To NVMe SSD - 850W-  Var-Box',
+                price: 22300,
+            },
+            {
+                id: 3,
+                image: 'image/aa-1.jpg',
+                title: 'Headphones',
+                description: 'Intel i9 11900F - RTX 3070Ti 8Go - 32Go RAM - 1To NVMe SSD - 850W',
+                price: 1600,
+            },
+            {
+                id: 5,
+                image: 'image/cc-1.jpg',
+                title: 'Smart Watch',
+                description: 'APPLE iPhone 14 Pro Max 128GB Space Black',
+                price: 600,
+            },
+            {
+                id: 1,
+                image: 'image/hh-2.jpg',
+                title: 'Air Pods Pro',
+                description: 'APPLE Air Pods Pro Max Bluetooth Black',
+                price: 60,
+            },
+            {
+                id: 2,
+                image: 'mobile/iPhone/7.png',
+                description: 'APPLE iPhone 14 Pro Max 128GB Space Black',
+                title: 'iPhone 14 Pro Max',
+                price: 11000,
+            },
+            {
+                id: 3,
+                image: 'pc_gamer/PC_1/2.png',
+                description: 'Intel i9 11900F - RTX 3060 12Go - 32Go RAM - 1To NVMe SSD - 600W - Win11',
+                title: 'Vibox VIII-1 PC Gamer',
+                price: 10100,
+            },
+            {
+                id: 4,
+                image: "pc_portable/HP_2/2.png",
+                description: 'Windows 11 FamilleIntel® Core™ i5 16Go RAM 512Go Disque SSD 15.6" FHDCarte graphique Intel® Iris® X',
+                title: 'HP Pavilion',
+                price: 9999,
+            },
+            {
+                id: 5,
+                image: 'mobile/HOTWAV/4.png',
+                description: '8 Go + 128 Go Smartphone, Antichoc étanche 7500mAh Caméra 48MP ',
+                title: 'HOTWAV Cyber 9 Pro',
+                price: 1200,
+            },
+
+        ];
+        const categories = [...new Set(product.map((item) => { return item }))];
+
+        document.getElementById('searchBar').addEventListener('keyup', (e) => {
+            const serchData = e.target.value.toLowerCase();
+            const filteredData = categories.filter((item) => {
+                return (
+                    item.title.toLowerCase().includes(serchData)
+                )
+            })
+            displayitem(filteredData);
+        });
+
+        const displayitem = (items) => {
+            window.document.querySelector(".gallery").innerHTML = items.map((item) => {
+                var { image, description, title, price } = item;
+                return (
+                    `<div class="content">
+                    <img src=${image}>
+                    <h3>${title}</h3>
+                    <p>${description}</p>
+                    <h6>${price} $</h6>
+                    <button class="buy">Acheter</button>
+                </div>
+                `
+                )
+            }).join('')
+        };
+        displayitem(categories);
+
+
+
+
+
+
+        // Cancel X Marck
+        let btnX = document.getElementById("cancel")
+        btnX.style.cssText = `
+        font-size:14px;
+        display: none;
+        margin-bottom:10px;
+
+            `
+
+        let searchBar = document.querySelector(".searchBar")
+        let searchBarInput = document.querySelector("#searchBar")
+
+        searchBar.onmouseenter = function () {
+            searchBarInput.style.cssText = `
+            width: 150px;
+            `
+
+            // btnX.style.cssText = `
+            // display: block;
+            // `
+            $(document).ready(function () {
+                $("#cancel").fadeIn(2000)
+            })
+
+            let IconSearch = document.querySelector(".glass")
+            IconSearch.style.cssText = `
+            display: none;
+            `
+            console.log(IconSearch)
+
+        }
+
+
+        btnX.onclick = function () {
+            searchBarInput.style.cssText = `
+            width:0px;
+            `
+
+            btnX.style.cssText = `
+            display: none;
+            `
+            let IconSearch = document.querySelector(".glass")
+
+            $(document).ready(function () {
+                $(".glass").fadeIn(2000)
+            })
+        }
+
+        // Js AutoComplate
+        let searchable = [
+            'Z Flip Foldable Mobile',
+            'Headphones',
+            'Vibox VIII-209 SG ',
+            'Smart Watch',
+            'Air Pods Pro',
+            'iPhone 14 Pro Max',
+            'Vibox VIII-1 PC Gamer',
+            'HP Pavilion',
+
+        ]
+        const searchInput = document.getElementById("searchBar")
+        const searchWrapper = document.querySelector(".wrapper")
+        const resultsWrapper = document.querySelector(".results")
+        let results = [];
+        searchInput.addEventListener("keyup", () => {
+
+            let input = searchInput.value
+            console.log(input)
+            if (input.length) {
+                results = searchable.filter((item) => {
+                    return item.toLowerCase().includes(input.toLowerCase());
+                })
+            }
+            renderResults(results)
+        });
+
+        function renderResults(results) {
+            let input = searchInput.value
+
+            if (!results.length || input === '') {
+
+
+                return resultsWrapper.style.cssText = `
+        display:none;
+        `
+            }
+
+
+            var content = results.map((item) => {
+                return `<li> <i class="fa-solid fa-magnifying-glass glass" id="btn"></i> <span>${item.toLowerCase()}</span></li>`
+            }).join('');
+            resultsWrapper.style.cssText = `
+        display:block;
+        `
+            resultsWrapper.innerHTML = `<ul>${content}</ul>`
+
+        }
+        window.onload = function () {
+            if (!results.length) {
+                resultsWrapper.style.cssText = `
+        display:none;
+        `
+            }
+        }
+        btnX.addEventListener("click", function () {
+            resultsWrapper.style.cssText = `
+        display:none;
+        `
+        })
+
+
+
+    </script>
+    <script src="Cart.js"></script>
+</body>
+
 </html>

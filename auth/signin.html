@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signin_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="jquery-3.7.1.min.js"></script>
+    <title>Ruby Store - Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1>Sign up</h1>
+            <form action="" method="post">
+                <div class="input-grp">
+                    <div class="input-field">
+                        <i class="fa-solid fa-circle-exclamation" id="icon1"  style=" color: rgb(190, 41, 41); display: none;"></i> <!-- user icon -->
+                        <input type="text" placeholder="Prenom" id="Prenom" style="display: inline-block;">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-circle-exclamation" id="icon2"  style=" color: rgb(190, 41, 41); display: none;"></i> <!-- user icon -->
+                        <input type="text" id="nom" placeholder="Nom">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-circle-exclamation" id="icon3"  style=" color: rgb(190, 41, 41); display: none;"></i> <!-- at icon -->
+                        <input type="email" id="email" placeholder="email">
+                    </div>
+                    <div class="input-field">
+                        <i></i> <!-- lock icon -->
+                        <input type="password" id="pass1" placeholder="mot de passe">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-circle-exclamation" id="icon4"  style=" color: rgb(190, 41, 41); display: none;"></i> <!-- lock icon -->
+                        <input type="password" id="pass2" placeholder="confirmer le mot de passe">
+                        <input type="text" id="error" disabled style="
+                        background-color: rgb(197, 197, 197);
+                        position: absolute; top: 50px; height: 30px;
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                        display: none;
+                        ">
+                    </div>
+                    <p>Forget Password <a href="#">Click Here</a></p>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="btn">Sign up</button>
+                    <!-- <button type="button">Sign in</button> -->
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="signin.js"></script>
+
+</body>
+
+</html>
